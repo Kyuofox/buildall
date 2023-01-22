@@ -32,6 +32,7 @@ $BDIR/timert configure ../log-gcc-configure \
 	--disable-libmudflap --disable-libssp --disable-libgomp \
 	--disable-decimal-float --disable-libquadmath \
 	--disable-libatomic --disable-libcc1 --disable-libmpx \
+	--with-as=${target}/bin/as \
 	--enable-checking=$CHECKING \
 	$TARGET_GCC_CONF $EXTRA_GCC_CONF && \
 $BDIR/timert build ../log-gcc-build make $MAKEOPTS && \
